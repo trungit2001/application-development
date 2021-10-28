@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="@dimen/small_padding"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="UseCompoundDrawables">
 
 
     <TextView
@@ -15,4 +17,14 @@
         android:text="@string/name"
         android:textAlignment="center"
         style="@style/NameStyle" />
+
+    <ImageView
+        android:id="@+id/star_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:contentDescription="@string/yellow_star"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck" />
+
 </LinearLayout>
